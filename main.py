@@ -13,13 +13,13 @@ import random
 import arcade
 
 # --- Constants ---
-SPRITE_SCALING_PLAYER = 0.5
+SPRITE_SCALING_PLAYER = 1
 SPRITE_SCALING_COIN = .25
-COIN_COUNT = 50
+COIN_COUNT = 100
 
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
-SCREEN_TITLE = "Sprite Collect Coins Example"
+SCREEN_WIDTH = 1000
+SCREEN_HEIGHT = 750
+SCREEN_TITLE = "Recoleccion de monedas"
 
 
 class MyGame(arcade.Window):
@@ -55,7 +55,7 @@ class MyGame(arcade.Window):
 
         # Set up the player
         # Character image from kenney.nl
-        img = ":resources:images/animated_characters/female_person/femalePerson_idle.png"
+        img = "messi.jpg"
         self.player_sprite = arcade.Sprite(img, SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 50
@@ -66,7 +66,7 @@ class MyGame(arcade.Window):
 
             # Create the coin instance
             # Coin image from kenney.nl
-            coin = arcade.Sprite(":resources:images/items/coinGold.png",
+            coin = arcade.Sprite("balon.jpg",
                                  SPRITE_SCALING_COIN)
 
             # Position the coin
